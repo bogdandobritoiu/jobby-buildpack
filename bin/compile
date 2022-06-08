@@ -25,8 +25,8 @@ if [ -f $ENV_DIR/SERVER_PATH ]; then
 		echo "       cleaning tmp dir $TMP_DIR"
 		rm -rf $TMP_DIR
 		echo "       INSTALL DEPENDENCIES"
+		npm install --global yarn
 		yarn
-		
 	fi
 	exit 0
 fi
@@ -49,6 +49,7 @@ if [ -f $ENV_DIR/CLIENT_PATH ]; then
 		echo "       cleaning tmp dir $TMP_DIR"
 		rm -rf $TMP_DIR
 		echo "       INSTALL DEPENDENCIES"
+		npm install --global yarn
 		yarn
 	fi
 	exit 0
