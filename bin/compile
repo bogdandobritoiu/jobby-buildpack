@@ -26,6 +26,7 @@ if [ -f $ENV_DIR/SERVER_PATH ]; then
 		rm -rf $TMP_DIR
 		echo "       INSTALL DEPENDENCIES"
 		yarn
+		yarn server:build
 	fi
 	exit 0
 fi
