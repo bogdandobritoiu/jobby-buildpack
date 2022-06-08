@@ -24,7 +24,11 @@ if [ -f $ENV_DIR/SERVER_PATH ]; then
 		cp -R $TMP_DIR/. $BUILD_DIR/
 		echo "       cleaning tmp dir $TMP_DIR"
 		rm -rf $TMP_DIR
+		echo "       INSTALL DEPENDENCIES"
+		yarn
+		
 	fi
+	exit 0
 fi
 
 
@@ -44,9 +48,12 @@ if [ -f $ENV_DIR/CLIENT_PATH ]; then
 		cp -R $TMP_DIR/. $BUILD_DIR/
 		echo "       cleaning tmp dir $TMP_DIR"
 		rm -rf $TMP_DIR
+		echo "       INSTALL DEPENDENCIES"
+		yarn
 	fi
+	exit 0
 fi
 
-exit 0
+exit 1
 
 
