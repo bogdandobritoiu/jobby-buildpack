@@ -47,6 +47,6 @@ if [ -f $ENV_DIR/CLIENT_PATH ]; then
 	fi
 fi
 
-exit 1
+exit 0
 
 
